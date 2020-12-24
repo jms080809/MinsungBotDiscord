@@ -125,7 +125,8 @@ async def 어몽(message):
 
 @bot.command()
 async def 흠(ctx):
-    await ctx.send('''⠀⠀⠀⠀⠀⢀⣀⣀⣀
+    await ctx.send('''
+      ⢀⣀⣀⣀
 ⠀⠀⠀⠰⡿⠿⠛⠛⠻⠿⣷
 ⠀⠀⠀⠀⠀⠀⣀⣄⡀⠀⠀⠀⠀⢀⣀⣀⣤⣄⣀⡀
 ⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀⠀⠀⠀⠛⠛⣿⣿⣿⡛⠿⠷
@@ -370,7 +371,39 @@ async def 시팔(ctx):
         민성뉴스 전민성 기자였습니다.
     ''',tts=True)
 
-
-
-
+@bot.command()
+async def 크리스마스(message):
+    embed=discord.Embed(title='징글벨',description='jingle bells',colour=discord.Colour.red())
+    embed.add_field(name='lylics', value='''
+It's Christmas
+Jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+Hey, jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+Jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+Hey, jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+It's Christmas
+Hey, jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+Hey, jingle bells, jingle bells
+Jingle all the way
+Oh, what fun it is to ride
+In a one horse open sleigh
+It's Christmas
+    ''',inline=False)
+    await message.send(embed=embed)
+    await message.send('2020크리스마스 즐겁게 보내십시오! 안그러면 뚜까맞을 겁니다! 크리스마스 기념으로 기프티콘 선물을 시행합니다! 선착순 1명!',tts=True)
+    await message.send('https://cdn.discordapp.com/attachments/774887554817458182/791572623397879818/3c624be4f328ff51.png')
 bot.run(TOKEN)
