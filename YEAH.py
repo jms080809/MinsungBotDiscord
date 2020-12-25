@@ -408,4 +408,4 @@ async def 크리스마스(message):
     await message.send('https://cdn.discordapp.com/attachments/774887554817458182/791572623397879818/3c624be4f328ff51.png')
 
 
-bot.run(token)
+bot.run(TOKEN)
