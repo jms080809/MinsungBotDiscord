@@ -320,7 +320,6 @@ async def 꼬불(ctx):
 
         ''')
     time.sleep(1)
-
 @bot.command()
 async def 옹클(message):
     embed=discord.Embed(colour=0x8b00ff,title='온라인 클래스 4반',description='https://oc11.ebssw.kr/sso/loginView.do?loginType=onlineClass&hmpgId=happy2064')
@@ -407,5 +406,11 @@ async def 크리스마스(message):
     await message.send('2020크리스마스 즐겁게 보내십시오! 안그러면 뚜까맞을 겁니다! 크리스마스 기념으로 기프티콘 선물을 시행합니다! 선착순 1명!',tts=True)
     await message.send('https://cdn.discordapp.com/attachments/774887554817458182/791572623397879818/3c624be4f328ff51.png')
 
-
+@bot.command()
+async def 이공이일(message):
+    link = 'https://drive.google.com/file/d/1CHUVfi88jYcTK3L3LCGac7pbHeqy5mgc/view?usp=sharing'
+    embed = discord.Embed(title = "2021 Bye!",description = "2020년을 보내고 새 2021년을 맞이하다!", colour = discord.Color.orange)
+    embed.set_thumbnail(url="https://image.freepik.com/free-vector/happy-new-2021-year-holiday-illustration-with-festive-typographic-composition-new-year_173043-569.jpg")
+    embed.add_field(name="새해 맞이하는 기념으로 Wumpus 한국판 출시!",value=f"아래 링크를 클릭해 text base 게임\nWumpus 사냥하기 를 플레이해보세요!\n{link}",inline=True)
+    embed.set_image(url="https://www.startupn.kr/news/photo/201912/548_527_327.jpg")
 bot.run(TOKEN)
