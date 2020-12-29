@@ -1,1 +1,1 @@
-worker: python YEAH.py
+worker: python yay.py
