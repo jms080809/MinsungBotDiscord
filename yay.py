@@ -409,8 +409,9 @@ async def 크리스마스(message):
 @bot.command()
 async def 이공이일(message):
     link = 'https://drive.google.com/file/d/1CHUVfi88jYcTK3L3LCGac7pbHeqy5mgc/view?usp=sharing'
-    embed = discord.Embed(title = "2021 Bye!",description = "2020년을 보내고 새 2021년을 맞이하다!", colour = discord.Color.orange)
+    embed = discord.Embed(title = "2020 Bye!", description = "2020년을 보내고 새 2021년을 맞이하다!",colour=0xffa500)
     embed.set_thumbnail(url="https://image.freepik.com/free-vector/happy-new-2021-year-holiday-illustration-with-festive-typographic-composition-new-year_173043-569.jpg")
     embed.add_field(name="새해 맞이하는 기념으로 Wumpus 한국판 출시!",value=f"아래 링크를 클릭해 text base 게임\nWumpus 사냥하기 를 플레이해보세요!\n{link}",inline=True)
     embed.set_image(url="https://www.startupn.kr/news/photo/201912/548_527_327.jpg")
+    await message.send(embed=embed)
 bot.run(TOKEN)
